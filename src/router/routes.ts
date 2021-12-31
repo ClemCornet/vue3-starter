@@ -4,13 +4,22 @@ import NotFound from '../views/NotFound.vue'
 
 /** @type {import('vue-router').RouterOptions['routes']} */
 const routes = [
-  { path: '/', component: Home, meta: { title: 'Home' } },
+  {
+    path: '/',
+    name: 'home',
+    meta: { title: 'Home' },
+    component: Home
+  },
   {
     path: '/about',
+    name: 'about',
     meta: { title: 'About' },
     component: About
   },
-  { path: '/:path(.*)', component: NotFound }
+  {
+    path: '/:path(.*)',
+    component: NotFound
+  }
 ]
 
 export default routes
