@@ -10,7 +10,7 @@
     "lint-fix": "eslint --fix ./src --ext .vue,.js,.ts"
   },
   "dependencies": {
-    "vue": "^3.2.27",
+    "vue": "^3.2.29",
     "vue-router": "4"
   },
   "devDependencies": {
